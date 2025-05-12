@@ -1,0 +1,47 @@
+
+
+
+
+/* Tiêu đề */
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ff5733;
+}
+
+/* Nút đăng nhập */
+.btn-primary {
+    background: #ff5733;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+  
+  .btn-primary {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+  }
+  .btn-second{
+    background: linear-gradient(to right, #050eff, hsl(285, 100%, 51%));
+    border: none;
+    color: white;
+  }
+  .btn-outline-secondary {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fab {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .transition-btn {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .transition-btn:hover {
+    transform: scale(1.05);
+  }
+  

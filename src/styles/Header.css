@@ -1,0 +1,36 @@
+.main-icon-header{
+    height: 100px;
+}
+.list-second>a{
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+.btn-navbar{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+.btn-navbar:hover{
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(13, 11, 11, 0.6);
+    
+}
+.list-second>a:hover,.list-second>a:focus{
+    background-color: rgba(128, 128, 128, 0.416);   
+}
+.header-container{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.header-container-second{
+    position: relative;
+    z-index: 0;
+}
+.header-container-third{
+    background-color: white;
+}

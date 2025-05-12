@@ -1,0 +1,25 @@
+.browser-menu-container{
+    border: 2px rgba(128, 128, 128, 0.384) solid;
+    width: 20%;
+    padding: 23px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.browser-menu-container>img,h3,p,a{
+    padding-bottom:20px;
+}
+.browser-menu-container>a{
+    text-decoration: none;
+    color: rgb(143, 37, 37);
+    font-weight: 500 ;
+}
+.browser-menu-container>img{
+    background-color: rgba(128, 128, 128, 0.177);
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+.browser-menu-container>a:hover{
+    color: rgb(230, 22, 22);
+}

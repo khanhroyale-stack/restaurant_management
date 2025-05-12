@@ -1,0 +1,58 @@
+.menu-description{
+    width: 30%;
+    margin-left: 35%;
+}
+.menu-category{
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.menu-category>a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgba(128, 128, 128, 0.282);;
+    padding: 10px 35px;
+    border-radius: 50px;
+}
+.menu-second-section{
+    display: flex;
+    background-color: #F9F9F7;    
+    align-items: center;
+}
+.menu-title-section{
+   margin: 0 100px;
+}
+.menu-title-section-second{
+    text-align: center;
+    margin-left: 25%;
+}
+.branding-logo-menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Khoảng cách giữa các logo */
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #F9F9F7;
+}
+.menu-searchbar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.search-input {
+    width: 500px; /* Set a width for the search bar */
+    padding: 10px; /* Add some padding */
+    border: 2px solid rgba(128, 128, 128, 0.5); /* Grey border with 50% opacity */
+    border-radius: 25px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.search-input:focus {
+    border-color: rgba(0, 0, 0, 0.7); /* Darker border on focus */
+}

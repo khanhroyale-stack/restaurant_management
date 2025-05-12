@@ -1,0 +1,97 @@
+{
+  "menuItems": [
+    {
+      "dishesName": "Fried Eggs",
+      "dishesImage": "https://cdn.loveandlemons.com/wp-content/uploads/2023/01/fried-egg.jpg",
+      "dishesPrice": 5800,
+      "dishesCategory": "Breakfast",
+      "id": "1"
+    },
+    {
+      "dishesName": "Hawaiian Pizza",
+      "dishesImage": "https://www.allrecipes.com/thmb/v1Xi2wtebK1sZwSJitdV4MGKl1c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hawaiian-pizza-ddmfs-3x2-132-450eff04ad924d9a9eae98ca44e3f988.jpg",
+      "dishesPrice": 2100,
+      "dishesCategory": "Main Dishes",
+      "id": "2"
+    },
+    {
+      "dishesName": "Martinez Cocktail",
+      "dishesImage": "https://hips.hearstapps.com/hmg-prod/images/210219-ver-febcocktail001-1-1613772095.jpg?crop=1.00xw:0.669xh;0,0.165xh&resize=1200:*",
+      "dishesPrice": 7400,
+      "dishesCategory": "Drinks",
+      "id": "3"
+    },
+    {
+      "dishesName": "Butterscotch Cake",
+      "dishesImage": "https://thomsonline.in/wp-content/uploads/2019/08/BUTTERSCOTCH-CAKE-3.jpg",
+      "dishesPrice": 1700,
+      "dishesCategory": "Desserts",
+      "id": "4"
+    },
+    {
+      "dishesName": "Mint Lemonade",
+      "dishesImage": "https://falasteenifoodie.com/wp-content/uploads/2023/04/Fresh-Drinks-for-Summer.jpeg",
+      "dishesPrice": 8000,
+      "dishesCategory": "Drinks",
+      "id": "5"
+    },
+    {
+      "dishesName": "Chocolate Ice Cream",
+      "dishesImage": "https://sugarpursuit.com/wp-content/uploads/2023/05/Chocolate-ice-cream-thumbnail.jpg",
+      "dishesPrice": 7000,
+      "dishesCategory": "Desserts",
+      "id": "6"
+    },
+    {
+      "dishesName": "Cheese Burger",
+      "dishesImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxObbwOf6mVoQLtGMFYU_8kbQCJUCj3dq2uQ&s",
+      "dishesPrice": 3400,
+      "dishesCategory": "Breakfast",
+      "id": "7"
+    },
+    {
+      "dishesName": "Banh Mi",
+      "dishesImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTspTvNPQa7H-NqaPk3-bsPUQUK0nf8fhIJEQ&s",
+      "dishesPrice": 10000,
+      "dishesCategory": "Breakfast",
+      "id": "8"
+    },
+    {
+      "dishesName": "Pho Bo",
+      "dishesImage": "https://fohlafood.vn/cdn/shop/articles/bi-quyet-nau-phi-bo-ngon-tuyet-dinh.jpg?v=1712213789",
+      "dishesPrice": 15000,
+      "dishesCategory": "Main Dishes",
+      "id": "9"
+    },
+    {
+      "dishesName": "Caprese Salad",
+      "dishesImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Insalata_Caprese_456.jpg/1280px-Insalata_Caprese_456.jpg",
+      "dishesPrice": 1200,
+      "dishesCategory": "Main Dishes",
+      "id": "10"
+    },
+    
+    
+    {
+      "dishesName": "Avocado Toast",
+      "dishesImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Avocado_toast_at_Voyager_Espresso_%2833134505776%29.jpg/1920px-Avocado_toast_at_Voyager_Espresso_%2833134505776%29.jpg",
+      "dishesPrice": 4500,
+      "dishesCategory": "Breakfast",
+      "id": "11"
+    },
+    {
+      "dishesName": "Chicken Alfredo Pasta",
+      "dishesImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chicken_fettuccine_alfredo.JPG/375px-Chicken_fettuccine_alfredo.JPG",
+      "dishesPrice": 9000,
+      "dishesCategory": "Main Dishes",
+      "id": "12"
+    },
+    {
+      "dishesName": "Grilled Salmon",
+      "dishesImage": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg",
+      "dishesPrice": 12000,
+      "dishesCategory": "Main Dishes",
+      "id": "13"
+    }
+  ]
+}
