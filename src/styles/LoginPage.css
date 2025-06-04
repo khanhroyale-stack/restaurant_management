@@ -45,3 +45,82 @@ h2 {
     transform: scale(1.05);
   }
   
+  .login-background {
+    background: #f8f9fa; 
+  color: #000;
+  }
+  
+  .login-card {
+    background-color: #ffffff;
+  color: #000000;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease;
+  }
+  
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .transition-btn {
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .transition-btn:hover {
+    transform: scale(1.05);
+  }
+  .animated-btn {
+    transition: all 0.3s ease;
+  transform-origin: center;
+  animation: popIn 0.5s ease;
+  }
+  
+  .animated-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .form-control::placeholder {
+    color: #888;
+  }
+  @keyframes popIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  .social-icon-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .social-icon-btn:hover {
+    transform: scale(1.2);
+  background-color: #000;
+  color: #fff;
+  }
+  
+  .social-facebook {
+    border-color: #1877f2;
+    color: #1877f2;
+  }
+  
+  .social-twitter {
+    border-color: #1da1f2;
+    color: #1da1f2;
+  }
+  
+  .social-google {
+    border-color: #db4437;
+    color: #db4437;
+  }
+  

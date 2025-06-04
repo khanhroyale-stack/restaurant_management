@@ -11,6 +11,8 @@ import Pages from "./pages/Pages";
 import AdminLayouts from "./layouts/Admin/AdminLayouts";
 import ManageProduct from "./pages/admin/manageProduct";
 import ManageContact from "./pages/admin/manageContact";
+import MenuDetails from "./pages/MenuDetails";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const user = JSON.parse(localStorage.getItem("user"));
@@ -19,6 +21,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         {/* Trang đăng nhập */}
         <Route path="/login" element={<LoginPage />} />
@@ -48,7 +51,14 @@ function App() {
             </Layouts>
           }
         />
-
+        <Route
+          path="/menu/:id"
+          element={
+            <Layouts>
+              <MenuDetails />
+            </Layouts>
+          }
+        />
         {/* Các trang yêu cầu đăng nhập */}
         <Route
           path="/contact"

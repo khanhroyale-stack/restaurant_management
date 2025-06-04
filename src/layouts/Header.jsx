@@ -4,7 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import '../styles/Header.css'
 import Magnet from '../components/Magnet';
 import { useNavigate } from "react-router-dom";
-
+import Chef from '../assets/images/chef.png'
 const Header = () => {
     const navigate = useNavigate();
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -62,7 +62,7 @@ const Header = () => {
             </div>
             <div className='d-flex justify-content-between align-items-center p-4 header-container-third'>
                 <div className='d-flex align-items-center ms-5'>
-                    <img src="https://cdn-icons-png.flaticon.com/512/5235/5235253.png" className='main-icon-header ' alt="icon" />
+                    <img src={Chef} className='main-icon-header ' alt="icon" />
                     <h1>Restaurant</h1>
                 </div>
                 <div>

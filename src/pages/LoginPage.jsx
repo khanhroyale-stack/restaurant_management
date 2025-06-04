@@ -19,10 +19,7 @@ const LoginPage = () => {
         localStorage.setItem("user", JSON.stringify(result.user));
         setMessage(result.message);
         navigate("/");
-
-        setTimeout(() => {
-          window.location.reload();
-        }, 100);
+        setTimeout(() => window.location.reload(), 100);
       } else {
         setMessage("Sai tài khoản hoặc mật khẩu!");
       }
@@ -32,66 +29,63 @@ const LoginPage = () => {
     }
   };
 
-
-  const handleReturn = () => {
-    navigate("/");
-  };
+  const handleReturn = () => navigate("/");
 
   return (
-    <div className="login-container d-flex align-items-center justify-content-center vh-100 bg-gradient">
-      <div className="login-box p-4 rounded shadow-lg text-dark bg-white" style={{ maxWidth: "400px", width: "100%" }}>
-        <h2 className="text-center fw-bold">Login</h2>
-        {message && <p className="text-danger text-center">{message}</p>}
+    <div className="login-background d-flex align-items-center justify-content-center vh-100">
+      <div className="login-card p-4 rounded shadow-lg bg-white text-dark" style={{ maxWidth: "400px", width: "100%" }}>
+        <h3 className="text-center fw-bold mb-4 text-primary">Welcome Back</h3>
+
+        {message && <div className="alert alert-danger text-center py-2">{message}</div>}
+
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="username" className="form-label">Username</label>
-            <input 
-              type="text" 
-              className="form-control" 
-              id="username" 
-              value={username} 
-              placeholder="Type your username"
-              onChange={(e) => setUsername(e.target.value)} 
-              required 
+            <input
+              type="text"
+              className="form-control"
+              id="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Enter your username"
+              required
             />
           </div>
 
           <div className="mb-3">
             <label htmlFor="password" className="form-label">Password</label>
-            <input 
-              type="password" 
-              className="form-control" 
-              id="password"   
-              value={password} 
-              placeholder="Type your password"
-              onChange={(e) => setPassword(e.target.value)} 
-              required 
+            <input
+              type="password"
+              className="form-control"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter your password"
+              required
             />
           </div>
 
-          <div className="justify-content-between mb-3">
-            <button type="submit" className="btn btn-primary w-100 transition-btn">Login</button>
-            <button type="button" className="btn btn-secondary w-100 mt-1 transition-btn" onClick={handleReturn}>
-              Return
-            </button>
-          </div>
+          <button type="submit" className="btn btn-primary w-100 mb-2 animated-btn">Login</button>
+          <button type="button" className="btn btn-outline-secondary w-100 animated-btn" onClick={handleReturn}>Return</button>
         </form>
 
-        <p className="text-center">Or Sign Up Using</p>
-        <div className="d-flex justify-content-center gap-3 mb-3">
-          <button className="btn btn-outline-secondary rounded-circle transition-btn">
-            <i className="fab fa-facebook-f"></i>
-          </button>
-          <button className="btn btn-outline-secondary rounded-circle transition-btn">
-            <i className="fab fa-twitter"></i>
-          </button>
-          <button className="btn btn-outline-secondary rounded-circle transition-btn">
-            <i className="fab fa-google"></i>
-          </button>
+        <hr />
+
+        <div className="text-center mt-3">
+          <p className="mb-2">Or sign in with</p>
+          <div className="d-flex justify-content-center gap-3 mb-3">
+            <button className="social-icon-btn social-facebook">
+              <i className="fab fa-facebook-f"></i>
+            </button>
+            <button className="social-icon-btn social-twitter">
+              <i className="fab fa-twitter"></i>
+            </button>
+            <button className="social-icon-btn social-google">
+              <i className="fab fa-google"></i>
+            </button>
+          </div>
+          <p className="mt-3">Don't have an account? <a href="/signup" className="text-primary">Sign Up</a></p>
         </div>
-        <p className="text-center">
-          Or Sign Up Using <a href="/signup">Sign Up</a>
-        </p>
       </div>
     </div>
   );

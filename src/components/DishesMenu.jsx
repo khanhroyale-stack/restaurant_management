@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import '../styles/DishesMenu.css';
 import { getAllDishes } from '../services/dishesService';
+import { Link } from 'react-router-dom';
 
 const DishesMenu = ({ selectedCategory, searchInput }) => {
     const [data, setData] = useState([]);
@@ -28,7 +29,7 @@ const DishesMenu = ({ selectedCategory, searchInput }) => {
         if (selectedCategory !== 'All') {
             filtered = filtered.filter(dish => dish.dishesCategory.toLowerCase() === selectedCategory.toLowerCase());
         }
-        
+
         if (searchInput.trim()) {
             filtered = filtered.filter(dish =>
                 dish.dishesName.toLowerCase().includes(searchInput.toLowerCase())
@@ -47,15 +48,18 @@ const DishesMenu = ({ selectedCategory, searchInput }) => {
                 searchedDishes.map(dish => (
                     <div key={dish.id} className="text-center dishes-menu-card">
                         <img src={dish.dishesImage} alt={dish.dishesName} />
-                        <h3 className="pt-3 text-danger">${Number(dish.dishesPrice).toLocaleString()}</h3>
-                        <h4 className="pb-3">{dish.dishesName}</h4>
-                        <p className="ps-5 pe-5">{dish.dishesCategory}</p>
+                        <div className='dishes-menu-description'>
+                            <h3 className="pt-3 text-danger">${Number(dish.dishesPrice).toLocaleString()}</h3>
+                            <h4 className="pb-3">{dish.dishesName}</h4>
+                            <p className="ps-5 pe-5">{dish.dishesCategory}</p>
+                            <Link to={`/menu/${dish.id}`} className='text-decoration-none text-black border p-2 rounded h-fit'>View Detail</Link>
+                        </div>
                     </div>
                 ))
             ) : (
                 <h4 className="text-center">Không có món ăn nào trong danh mục này.</h4>
             )}
-        </div>
+        </div >
     );
 };
 

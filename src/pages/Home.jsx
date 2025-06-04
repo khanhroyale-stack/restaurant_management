@@ -7,7 +7,10 @@ import Lemonade from '../assets/images/lemonade.png';
 import Dessert from '../assets/images/dessert.png';
 import UniqueServiceCard from '../components/UniqueServiceCard';
 import HomeImage from '../assets/images/home-image.jpg';
-
+import HomeImage1 from '../assets/images/homeimage.jpg'
+import HomeImage2 from '../assets/images/homeimage1.jpg'
+import { Link } from 'react-router-dom';
+import food from '../assets/images/healthyfood.webp'
 const Home = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -20,7 +23,7 @@ const Home = () => {
         <div>
             {/* Hình ảnh giới thiệu */}
             <div className='img-container'>
-                <img className='w-100' src={HomeImage} alt="Food" />
+                <img className='w-100' src={HomeImage2} alt="Food" />
                 <div className='description-home'>
                     <h1>Best food for your taste</h1>
                     <p>Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven</p>
@@ -41,17 +44,17 @@ const Home = () => {
             {/* Giới thiệu nhà hàng */}
             <div className='d-flex align-items-center about-container'>
                 <div className='about-main-img-container w-50'>
-                    <img className='w-75 about-main-img' src="https://www.onceuponachef.com/images/2023/08/Beef-Tacos.jpg" alt="food" />
+                    <img className='w-75 about-main-img' src={food} alt="food" />
                     <div className='about-description'>
                         <h5>Come and visit us</h5>
                         <div className='mb-3'>
                             <i className="bi bi-telephone">  (414)857 - 0107</i>
                         </div>
                         <div className='mb-3'>
-                            <i className="bi bi-envelope">  khanhroyale@lethimcook.com</i>
+                            <i className="bi bi-envelope">  khanhhoangia@lethimcook.com</i>
                         </div>
                         <div>
-                            <i className="bi bi-geo-alt">  837 W.Marshall Lane Marshalltown, IA 50158, Los Angeles</i>
+                            <i className="bi bi-geo-alt">  837 W.Marshall Lane Marshalltown, IA 50158, Ohio</i>
                         </div>
                     </div>
                 </div>
@@ -64,7 +67,7 @@ const Home = () => {
                     </div>
                     <p>At place, we believe that dining is not just about food,
                         but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.</p>
-                    <a href="/about" className='more-about-us'>More About Us</a>
+                    <Link to="/about" className='more-about-us'>More About Us</Link>
                 </div>
             </div>
 
@@ -76,8 +79,8 @@ const Home = () => {
                     </h1>
                 </div>
                 <div className='d-flex gap-3'>
-                    <UniqueServiceCard imageURL="https://vanangroup.com.vn/wp-content/uploads/2024/12/Catering-la-gi-Tim-hieu-dich-vu-catering-trong-khach-san-nha-hang-tu-A-Z.jpg" title="Caterings" />
-                    <UniqueServiceCard imageURL="https://cdn.britannica.com/93/238093-050-9B6CA8A5/decorated-cake-candles-gifts.jpg" title="Birthdays" />
+                    <UniqueServiceCard imageURL="https://traodoivanhoa.yfuvietnam.org/resource/files/nganh-catering-la-gi.jpg" title="Caterings" />
+                    <UniqueServiceCard imageURL="https://www.foodandwine.com/thmb/JA_FagHUDgd2Hl-5HygYHps3WrE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/How-to-Have-Your-Birthday-at-a-Restaurant-FT-MAG0723-4bf1a09685134f389dfb48ea4a3ad400.jpg" title="Birthdays" />
                     <UniqueServiceCard imageURL="https://www.dottyaboutpaper.co.uk/cdn/shop/articles/couple-holding-wedding-bouquet-scaled_1024x1024.jpg?v=1694339675" title="Weddings" />
                     <UniqueServiceCard imageURL="https://blog.topcv.vn/wp-content/uploads/2021/07/sk2uEvents_Page_Header_2903ed9c-40c1-4f6c-9a69-70bb8415295b.jpg" title="Events" />
                 </div>

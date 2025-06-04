@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Footer.css'
 import Hamburger from '../assets/images/classichamburger.jpg'
+import Chef from '../assets/images/chef.png';
 const Footer = () => {
     return (
         <div className=''>
@@ -8,7 +9,7 @@ const Footer = () => {
                 <div className='mx-auto w-50'>
                     <div className="d-flex align-items-center">
                         <img
-                            src="https://cdn-icons-png.flaticon.com/512/5235/5235253.png"
+                            src={Chef}
                             className="main-icon-footer me-2"
                             alt="icon"
                         />
