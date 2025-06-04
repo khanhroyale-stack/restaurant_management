@@ -1,2 +1,2 @@
-# restaurant_management
+# restaurant_management_group_project
 Group Project
